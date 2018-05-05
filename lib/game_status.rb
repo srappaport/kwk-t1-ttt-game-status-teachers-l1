@@ -68,7 +68,7 @@ def winner(board)
   if won?(board)
     win_combination = won?(board)
     windex = win_combination[0]
-    if board(windex) == "X"
+    if board[windex] == "X"
       return "X"
     else
       return "O"
