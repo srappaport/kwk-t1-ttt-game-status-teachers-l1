@@ -65,6 +65,7 @@ def over?(board)
 end
 
 def winner(board)
+  if won?(board)
     win_combination = won?(board)
     windex = win_combination[0]
     if board(windex) == "X"
@@ -72,4 +73,5 @@ def winner(board)
     else
       return "O"
     end
+  end
 end
